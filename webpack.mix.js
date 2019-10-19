@@ -17,6 +17,9 @@ mix // Laravel asset runner
    .sass('resources/sass/auth.scss', 'public/css')
    .js('resources/js/auth.js', 'public/js')
 
-   // Application assets 
+   // frontend assets
+   .sass('resources/sass/frontend.scss', 'public/css')
+
+   // Application assets
    .js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css');
