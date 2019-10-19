@@ -13,7 +13,7 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 // Home routes
 Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
