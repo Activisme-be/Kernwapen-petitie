@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-8">
                 <div class="card card-body border-0 shadow-sm">
-
+                    h
                 </div>
             </div>
 
@@ -39,15 +39,27 @@
                             </div>
 
                             <div class="form-group col-12">
+                                <label class="signature-label" for="email">E-mail adres</label>
+                                <input type="email" class="form-control @error('email', 'is-invalid')" id="email" @input('email')>
+                                @error('email')
+                            </div>
+
+                            <div class="form-group col-12">
                                 <label class="signature-label" for="address">Adres + huisnummer</label>
                                 <input type="text" class="form-control @error('adres', 'is-invalid')" id="address" @input('adres')>
                                 @error('adres')
                             </div>
 
                             <div class="form-group col-12">
-                                <label class="signature-label" for="email">E-mail adres</label>
-                                <input type="email" class="form-control @error('email', 'is-invalid')" id="email" @input('email')>
-                                @error('email')
+                                <label class="signature-label" for="postal">Postcode</label>
+                                <input type="text" class="form-control @error('postcode', 'is-invalid')" id="postal" @input('postcode')>
+                                @error('postcode')
+                            </div>
+
+                            <div class="form-group col-12 mb-0">
+                                <label class="signature-label" for="city">Stad of gemeente</label>
+                                <input type="text" class="form-control @error('stad_of_gemeente', 'is-invalid')" id="city" @input('stad_of_gemeente')>
+                                @error('stad_of_gemeente')
                             </div>
                         </div>
                     </form>
