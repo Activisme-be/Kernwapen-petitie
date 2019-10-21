@@ -8,9 +8,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import 'settings/variables';
 @import '~bootstrap/scss/bootstrap';
+@import "modules/icons";
+
 
 // Page group specific variables
-$secondary:                     #801515 !default;
+$brand-dark:                    #801515 !default;
 $body-color:                    lighten(#000, 20%);
 $nav-pills-link-active-bg:      #8C8C8C;
 
@@ -18,7 +20,48 @@ $brand-base:                    #B9210C;
 $brand-brown:                   #56423D;
 $brand-grey:                    #BEA6A0;
 
-$link-color:                     $brand-base !default;
-$link-decoration:                none !default;
-$link-hover-color:               darken($link-color, 15%) !default;
-$link-hover-decoration:          none !default;
+$sign-color:                    lighten($brand-base, 5%);
+
+$link-color:                    $brand-base !default;
+$link-decoration:               none !default;
+$link-hover-color:              darken($link-color, 15%) !default;
+$link-hover-decoration:         none !default;
+
+// Page heade jumbotron
+.jumbotron-header {
+    background-color: #B9210C;
+    color: white;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 330px;
+    height: 100vh;
+}
+
+.height-hero-img {
+    height: 330px !important;
+    width: 100%;
+}
+
+// Buttons
+.btn-jumbotron {
+    @include button-variant($brand-dark, $brand-dark);
+}
+
+// Signature box
+.bg-signature-header {
+    background-color: darken($white, 5%);
+}
+
+.signature-title {
+    color: $brand-base;
+    font-style: italic;
+}
+
+.btn-sign {
+    @include button-variant($sign-color, $sign-color);
+}
+
+label {
+    margin-bottom: .25rem !important;
+}
