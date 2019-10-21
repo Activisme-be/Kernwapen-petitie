@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Petition;
 
 use App\Http\Controllers\Controller;
+use App\Repositories\SignatureRepository;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 /**
@@ -21,9 +23,17 @@ class SignatureController extends Controller
 
     /**
      * SignatureController constructor.
+     *
+     * @param SignatureRepository $signatureRepository repository implementation.
+     * @return void
      */
-    public function __construct()
+    public function __construct(SignatureRepository $signatureRepository)
     {
         $this->signatureRepository = $signatureRepository;
+    }
+
+    public function store(): RedirectResponse
+    {
+
     }
 }
