@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pages;
 use App\Models\SystemAlert;
 use Illuminate\Contracts\Support\Renderable;
 use Spatie\Activitylog\Models\Activity;
@@ -28,11 +29,13 @@ class HomeController extends Controller
     /**
      * Get the first page of the application.
      *
+     * @param  Pages $page The database model entity that holds all the dynamic pages for the application.
      * @return Renderable
      */
-    public function welcome(): Renderable
+    public function welcome(Pages $page): Renderable
     {
-        return view('welcome');
+        $petition = $page->where('identifier', 'petition')->firstOrFail();
+        return view('welcome', compact('petition'));
     }
 
     /**

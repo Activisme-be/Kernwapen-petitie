@@ -4,7 +4,7 @@
     @include ('_partials.jumbotron', [
         'title' => 'Ban nuclaire kernwapens',
         'buttons' => true,
-        'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id porta',
+        'description' => $petition->excerpt,
         'utilities' => 'mb-0',
     ])
 
@@ -12,7 +12,9 @@
         <div class="row">
             <div class="col-8">
                 <div class="card card-body border-0 shadow-sm">
-                    h
+                    <h5 class="border-bottom brand-text border-gray pb-1 mb-3">
+                        {{ $petition->title }}
+                    </h5>
                 </div>
             </div>
 

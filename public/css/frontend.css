@@ -12276,6 +12276,10 @@ label {
   margin-bottom: 0.25rem !important;
 }
 
+.brand-text {
+  color: #B9210C;
+}
+
 .content {
   -webkit-box-flex: 1;
           flex: 1 0 auto;
