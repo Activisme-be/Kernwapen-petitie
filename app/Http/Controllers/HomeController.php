@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pages;
+use App\Models\Signature;
 use App\Models\SystemAlert;
 use Illuminate\Contracts\Support\Renderable;
 use Spatie\Activitylog\Models\Activity;
@@ -29,13 +30,16 @@ class HomeController extends Controller
     /**
      * Get the first page of the application.
      *
-     * @param  Pages $page The database model entity that holds all the dynamic pages for the application.
+     * @param  Pages     $page          The database model entity that holds all the dynamic pages for the application.
+     * @param  Signature $signatures    Database model class for all the petition signatures
      * @return Renderable
      */
-    public function welcome(Pages $page): Renderable
+    public function welcome(Pages $page, Signature $signatures): Renderable
     {
         $petition = $page->where('identifier', 'petition')->firstOrFail();
-        return view('welcome', compact('petition'));
+        $signaturesCount = $signatures->count();
+
+        return view('welcome', compact('petition', 'signaturesCount'));
     }
 
     /**

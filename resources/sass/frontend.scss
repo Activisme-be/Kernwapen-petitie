@@ -27,6 +27,19 @@ $link-decoration:               none !default;
 $link-hover-color:              darken($link-color, 15%) !default;
 $link-hover-decoration:         none !default;
 
+// Petition author section
+// Author section
+.author-section {
+    vertical-align: middle;
+    margin-bottom: 1.20rem;
+
+    .author-image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+}
+
 // Page heade jumbotron
 .jumbotron-header {
     background-color: #B9210C;

@@ -15,6 +15,19 @@
                     <h5 class="border-bottom brand-text border-gray pb-1 mb-3">
                         {{ $petition->title }}
                     </h5>
+
+                    <div class="author-section">
+                        <img class="author-image shadow-sm mr-2" src="https://via.placeholder.com/150" alt="">
+                        Test gebruiker heeft deze petitie gestart
+
+                        <span class="float-right mt-1 text-muted">
+                            <i class="fe fe-edit-3 mr-2"></i> {{ $signaturesCount }} / 30000
+                        </span>
+                    </div>
+
+                    {{-- Petition text --}}
+                    <p class="card-text">tet</p>
+                    {{-- /// END petition text --}}
                 </div>
             </div>
 

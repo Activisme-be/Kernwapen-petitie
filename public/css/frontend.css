@@ -12172,6 +12172,17 @@ a.text-dark:focus {
   content: "\EA06";
 }
 
+.author-section {
+  vertical-align: middle;
+  margin-bottom: 1.2rem;
+}
+
+.author-section .author-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
 .jumbotron-header {
   background-color: #B9210C;
   color: white;
