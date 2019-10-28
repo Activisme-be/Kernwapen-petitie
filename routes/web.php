@@ -4,6 +4,7 @@ use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\Auth\PasswordSecurityController;
 use App\Http\Controllers\Auth\TwoFactorResetController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\Petition\SignatureController;
 use App\Http\Controllers\Users\AccountController;
 
 /*
@@ -39,6 +40,8 @@ Route::post('/gebruiker/deactiveer-2fa', [PasswordSecurityController::class, 'di
 Route::get('/2fa-herstel', [TwoFactorResetController::class, 'index'])->name('recovery.2fa');
 Route::post('/2fa-herstel', [TwoFactorResetController::class, 'request'])->name('recovery.2fa.request');
 Route::get('/2fa-reset', [TwoFactorResetController::class, 'handle'])->name('2fa.reset');
+
+Route::get('/handtekeningen', [SignatureController::class, 'index'])->name('signatures.index');
 
 Route::post('/2faVerify', function () {
     return redirect()->route('home');

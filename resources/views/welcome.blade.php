@@ -20,7 +20,7 @@
                         <img class="author-image shadow-sm mr-2" src="https://via.placeholder.com/150" alt="">
                         Test gebruiker heeft deze petitie gestart
 
-                        <span class="float-right mt-1 text-muted">
+                        <span class="float-right mt-2 text-muted">
                             <i class="fe fe-edit-3 mr-2"></i> {{ $signaturesCount }} / 30000
                         </span>
                     </div>

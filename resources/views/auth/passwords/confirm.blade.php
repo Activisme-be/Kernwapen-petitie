@@ -6,7 +6,7 @@
             <div class="row justify-content-md-center h-100">
                 <div class="card-wrapper">
                     <div class="brand">
-                        <img src="{{ asset('img/logo.jpg') }}">
+                        <img src="{{ asset('img/logo.png') }}">
                     </div>
                     <div class="card fat">
                         <div class="card-body">
@@ -46,7 +46,7 @@
 
 
                                 <div class="form-group no-margin">
-                                    <button type="submit" class="btn btn-orange text-white btn-block">
+                                    <button type="submit" class="btn btn-secondary text-white btn-block">
                                         Bevestig wachtwoord
                                     </button>
                                 </div>

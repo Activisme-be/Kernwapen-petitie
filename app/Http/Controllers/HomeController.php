@@ -24,7 +24,6 @@ class HomeController extends Controller
     {
         $this->middleware(['auth', '2fa', 'forbid-banned-user', 'portal:application'])->only(['index']);
         $this->middleware(['auth', '2fa', 'forbid-banned-user', 'portal:kiosk'])->only(['kiosk']);
-        $this->middleware(['guest'])->only(['welcome']);
     }
 
     /**

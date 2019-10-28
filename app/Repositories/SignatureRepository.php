@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Signature;
+use Illuminate\Contracts\Pagination\Paginator;
 
 /**
  * Class SignatureRepository
@@ -28,5 +29,15 @@ class SignatureRepository
     public function store(array $data): Signature
     {
         return $this->entity()->create($data);
+    }
+
+    /**
+     * Method for getting all the petition signatures that are stored in the application.
+     *
+     * @return Paginator
+     */
+    public function getSignatures(): Paginator
+    {
+        return $this->entity()->latest()->paginate();
     }
 }

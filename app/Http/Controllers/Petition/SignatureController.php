@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Petition\SignatureFormRequest;
 use App\Models\Signature;
 use App\Repositories\SignatureRepository;
+use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -33,7 +34,20 @@ class SignatureController extends Controller
     public function __construct(SignatureRepository $signatureRepository)
     {
         $this->signatureRepository = $signatureRepository;
+
         $this->middleware(['auth', 'role:admin|webmaster', '2fa', 'forbid-banned-user'])->except('store');
+        $this->middleware('password.confirm')->only('index');
+    }
+
+    /**
+     * Method for displaying the backend overview for all the petition signatures in the storage.
+     *
+     * @return Renderable
+     */
+    public function index(): Renderable
+    {
+        $signatures = $this->signatureRepository->getSignatures();
+        return view('petition.signatures.index', compact('signatures'));
     }
 
     /**
