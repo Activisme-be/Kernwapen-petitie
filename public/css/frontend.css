@@ -12172,6 +12172,10 @@ a.text-dark:focus {
   content: "\EA06";
 }
 
+.skew {
+  background-color: #b9210c;
+}
+
 .author-section {
   vertical-align: middle;
   margin-bottom: 1.2rem;

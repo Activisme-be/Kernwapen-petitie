@@ -9,7 +9,7 @@
     ])
 
     <div class="container py-4">
-        <div class="row">
+        <div class="row pb-2">
             <div class="col-8">
                 <div class="card card-body border-0 shadow-sm">
                     <h5 class="border-bottom brand-text border-gray pb-1 mb-3">
@@ -18,15 +18,47 @@
 
                     <div class="author-section">
                         <img class="author-image shadow-sm mr-2" src="https://via.placeholder.com/150" alt="">
-                        Test gebruiker heeft deze petitie gestart
+                        <span class="text-muted">Test gebruiker heeft deze petitie gestart</span>
 
                         <span class="float-right mt-1 text-muted">
-                            <i class="fe fe-edit-3 mr-2"></i> {{ $signaturesCount }} / 30000
+                            <i class="fe fe-edit-3 mr-2"></i> {{ $signaturesCount }} / 30.000
                         </span>
                     </div>
 
+                    <hr class="mt-0">
+
                     {{-- Petition text --}}
-                    <p class="card-text">tet</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
+                            Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
+                            suscipit quam. Mauris sodales egestas mauris ultricies blandit.
+                        </p>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
+                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
+                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
+                    </p>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
+                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
+                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
+                    </p>
+
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
+                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
+                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
+                    </p>
+
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
+                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
+                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
+                    </p>
                     {{-- /// END petition text --}}
                 </div>
             </div>
