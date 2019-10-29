@@ -48,31 +48,31 @@
 
                         <div class="form-row">
                             <div class="form-group col-12">
-                                <label class="signature-label" for="firstname">Voornaam</label>
+                                <label class="signature-label" for="firstname">Voornaam <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('voornaam', 'is-invalid')" id="firstname" @input('voornaam')>
                                 @error('firstname')
                             </div>
 
                             <div class="form-group col-12">
-                                <label class="signature-label" for="lastname">Achternaam</label>
+                                <label class="signature-label" for="lastname">Achternaam <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('achternaam', 'is-invalid')" id="lastname" @input('achternaam')>
                                 @error('achternaam')
                             </div>
 
                             <div class="form-group col-12">
-                                <label class="signature-label" for="email">E-mail adres</label>
+                                <label class="signature-label" for="email">E-mail adres <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control @error('email', 'is-invalid')" id="email" @input('email')>
                                 @error('email')
                             </div>
 
                             <div class="form-group col-12">
-                                <label class="signature-label" for="address">Adres + huisnummer</label>
+                                <label class="signature-label" for="address">Adres + huisnummer <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('adres', 'is-invalid')" id="address" @input('adres')>
                                 @error('adres')
                             </div>
 
                             <div class="form-group col-12">
-                                <label class="signature-label" for="postal">Postcode</label>
+                                <label class="signature-label" for="postal">Postcode <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('postcode', 'is-invalid')" id="postal" @input('postcode')>
                                 @error('postcode')
                             </div>

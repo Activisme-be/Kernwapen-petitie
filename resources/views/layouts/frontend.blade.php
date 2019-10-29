@@ -22,7 +22,7 @@
     <body>
         <div id="app" class="content">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
-                <div class="container">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
@@ -38,30 +38,29 @@
 
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
-                            <!-- Authentication Links -->
-                            @guest
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">
-                                        <i class="fe fe-log-in mr-1"></i> {{ __('Aanmelden') }}
-                                    </a>
-                                </li>
-                            @else
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        <i class="fe fe-user mr-1"></i> {{ $currentUser->name }} <span class="caret"></span>
-                                    </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="fe fe-file fe-brand-navbar mr-1"></i> Petitie
+                                </a>
+                            </li>
 
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                            {{ __('Afmelden') }}
-                                        </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="fe fe-menu fe-brand-navbar mr-1"></i> Nieuws
+                                </a>
+                            </li>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                                </li>
-                            @endguest
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="fe fe-home fe-brand-navbar mr-1"></i> Gemeentes
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <i class="fe fe-mail fe-brand-navbar mr-1"></i> Contact
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
