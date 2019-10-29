@@ -17,7 +17,7 @@
                     </h5>
 
                     <div class="author-section">
-                        <img class="author-image shadow-sm mr-2" src="https://via.placeholder.com/150" alt="">
+                        <img class="rounded author-image mr-2" src="{{ asset('images/ican.jpg') }}" alt="">
                         <span class="text-muted">Test gebruiker heeft deze petitie gestart</span>
 
                         <span class="float-right mt-1 text-muted">
@@ -28,37 +28,11 @@
                     <hr class="mt-0">
 
                     {{-- Petition text --}}
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
-                            Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
-                            suscipit quam. Mauris sodales egestas mauris ultricies blandit.
-                        </p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
-                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
-                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
-                    </p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
-                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
-                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
-                    </p>
-
-
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
-                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
-                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
-                    </p>
-
-
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tincidunt lacus, ac rutrum turpis. Etiam vel bibendum purus, vel blandit est. Cras viverra libero sed risus vehicula, tincidunt suscipit odio hendrerit.
-                        Cras consectetur eros enim, eget scelerisque dolor suscipit in. Aliquam fermentum convallis interdum. Nunc at neque leo. Nulla eget dolor tincidunt, semper velit ac,
-                        suscipit quam. Mauris sodales egestas mauris ultricies blandit.
-                    </p>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
                     {{-- /// END petition text --}}
                 </div>
             </div>
