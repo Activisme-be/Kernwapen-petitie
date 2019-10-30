@@ -12176,6 +12176,10 @@ a.text-dark:focus {
   background-color: #b9210c;
 }
 
+.fe-brand-navbar {
+  color: #989696;
+}
+
 .author-section {
   vertical-align: middle;
   margin-bottom: 1.2rem;
@@ -12203,40 +12207,40 @@ a.text-dark:focus {
 
 .btn-jumbotron {
   color: #fff;
-  background-color: #801515;
-  border-color: #801515;
+  background-color: #5b1a0d;
+  border-color: #5b1a0d;
 }
 
 .btn-jumbotron:hover {
   color: #fff;
-  background-color: #5f1010;
-  border-color: #540e0e;
+  background-color: #3a1008;
+  border-color: #2e0d07;
 }
 
 .btn-jumbotron:focus,
 .btn-jumbotron.focus {
-  box-shadow: 0 0 0 0.2rem rgba(147, 56, 56, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(116, 60, 49, 0.5);
 }
 
 .btn-jumbotron.disabled,
 .btn-jumbotron:disabled {
   color: #fff;
-  background-color: #801515;
-  border-color: #801515;
+  background-color: #5b1a0d;
+  border-color: #5b1a0d;
 }
 
 .btn-jumbotron:not(:disabled):not(.disabled):active,
 .btn-jumbotron:not(:disabled):not(.disabled).active,
 .show > .btn-jumbotron.dropdown-toggle {
   color: #fff;
-  background-color: #540e0e;
-  border-color: #490c0c;
+  background-color: #2e0d07;
+  border-color: #230a05;
 }
 
 .btn-jumbotron:not(:disabled):not(.disabled):active:focus,
 .btn-jumbotron:not(:disabled):not(.disabled).active:focus,
 .show > .btn-jumbotron.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(147, 56, 56, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(116, 60, 49, 0.5);
 }
 
 .bg-signature-header {

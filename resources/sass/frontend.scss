@@ -27,8 +27,49 @@ $link-decoration:               none !default;
 $link-hover-color:              darken($link-color, 15%) !default;
 $link-hover-decoration:         none !default;
 
+$white: #ffffff;
+$gray-lightest: #faf8f7;
+$gray-lighter: #e6e4e4;
+$gray-light: #d2d0d0;
+$gray: #c0bebd;
+$gray-dark: #989696;
+$gray-darker: #706e6e;
+$gray-darkest: #4a4847;
+$black: #222020;
+
+$brand-light: #f8cabe;
+$brand: #b9210c;
+$brand-dark: #5b1a0d;
+
+$cta-light: #cfeedc;
+$cta: #0cb978;
+$cta-dark: #1c593c;
+
+$info-light: #e2eef2;
+$info: #8abccb;
+$info-dark: #445a60;
+
+$warning-light: #ffedc9;
+$warning: #f3bb05;
+$warning-dark: #735916;
+
+$success-light: #e1f3ce;
+$success: #7acc37;
+$success-dark: #3e6122;
+
+$danger-light: #ffd1ca;
+$danger: #f12f39;
+$danger-dark: #732220;
+
+
+
 .skew {
     background-color: rgb(185, 33, 12);
+}
+
+// Navigation bar
+.fe-brand-navbar {
+    color: $gray-dark;
 }
 
 // Petition author section

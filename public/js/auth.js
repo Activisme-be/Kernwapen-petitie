@@ -37042,10 +37042,10 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Gebruiker\Documents\spoone\resources\js\auth.js */"./resources/js/auth.js");
-__webpack_require__(/*! C:\Users\Gebruiker\Documents\spoone\resources\sass\auth.scss */"./resources/sass/auth.scss");
-__webpack_require__(/*! C:\Users\Gebruiker\Documents\spoone\resources\sass\frontend.scss */"./resources/sass/frontend.scss");
-module.exports = __webpack_require__(/*! C:\Users\Gebruiker\Documents\spoone\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/tjoosten/Documents/Kernwapen-petitie/resources/js/auth.js */"./resources/js/auth.js");
+__webpack_require__(/*! /Users/tjoosten/Documents/Kernwapen-petitie/resources/sass/auth.scss */"./resources/sass/auth.scss");
+__webpack_require__(/*! /Users/tjoosten/Documents/Kernwapen-petitie/resources/sass/frontend.scss */"./resources/sass/frontend.scss");
+module.exports = __webpack_require__(/*! /Users/tjoosten/Documents/Kernwapen-petitie/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
