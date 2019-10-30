@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Cities\FrontendController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -17,3 +18,6 @@ Auth::routes(['register' => false]);
 
 // Home routes
 Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
+
+// City routes
+Route::get('/gemeentes', [FrontendController::class, 'index'])->name('cities.index');

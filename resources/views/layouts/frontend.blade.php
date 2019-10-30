@@ -34,7 +34,7 @@
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="">
+                                <a class="nav-link {{ active('welcome') }}" href="{{ route('welcome') }}">
                                     <i class="fe fe-file fe-brand-navbar mr-1"></i> Petitie
                                 </a>
                             </li>
@@ -46,7 +46,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="">
+                                <a class="nav-link {{ active('cities.index') }}" href="{{ route('cities.index') }}">
                                     <i class="fe fe-home fe-brand-navbar mr-1"></i> Gemeentes
                                 </a>
                             </li>

@@ -9,7 +9,7 @@
 @import 'settings/variables';
 @import '~bootstrap/scss/bootstrap';
 @import "modules/icons";
-
+@import 'modules/page-header';
 
 // Page group specific variables
 $brand-dark:                    #801515 !default;
@@ -61,7 +61,25 @@ $danger-light: #ffd1ca;
 $danger: #f12f39;
 $danger-dark: #732220;
 
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
 
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.form-search {
+    width: 280px !important;
+}
 
 .skew {
     background-color: rgb(185, 33, 12);

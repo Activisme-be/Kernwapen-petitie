@@ -6,25 +6,19 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateSignaturesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
-        Schema::create('signatures', function (Blueprint $table) {
+        Schema::create('signatures', static function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('postal_id');
             $table->timestamps();
+
+            // Foreign keys and indexes
+            $table->foreign('postal_id')->references('id')->on('postals');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('signatures');
     }

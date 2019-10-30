@@ -11,6 +11,7 @@ class FrontendController extends Controller
 {
     public function index(City $cities): Renderable
     {
+        $cities = $cities->orderBy('name', 'asc')->simplePaginate(9);
         return view('cities.frontend.index', compact('cities'));
     }
 }
